@@ -39,7 +39,13 @@ def PrintHelp(topic="all"):
 \033[1;37mmessage:\033[0m
    Description: Generates a random message. Possible message types: "cringe", "sus", "twitter", "funny", "good", "ip", "dsmp", "poop", "game", "ytbot", "random"
    \033[0;32mUsage\033[0m: "message {message type}"
-   Example: "message cringe"''')
+   Example: "message cringe"
+
+\033[1;37mprofile:\033[0m
+   Description: Sets an accounts profile picture. Possible profile types: "generic", "minecraft", "sus" (You need to provide the image files)
+   \033[0;32mUsage\033[0m: "profile {accounts file}:{account entry} {profile type}"
+   Example: "profile accs.yml:account1 minecraft"
+''')
     elif topic=="ai":
         print("""\033[1;37mai:\033[0m
    Description: Makes the specified account start talking to people using OpenAI's Davinci model. You can talk to the AI directly instead of via Discord by setting the first parameter to "direct"
@@ -50,12 +56,6 @@ def PrintHelp(topic="all"):
    - ai direct
    \033[0;33mNOTE\033[0m: This command requires a valid OpenAI API key
    """)
-    elif topic=="raid":
-        print("""\033[1;37mraid:\033[0m
-   Description: Sends odd messages in the specified channels using 3 different accounts
-   \033[0;32mUsage\033[0m: "raid {channel ID} {accounts file}"
-   Example: "raid 903089870619160582 accs.yml"
-   \033[0;33mNOTE\033[0m: Requires at least 3 working accounts configured in the accounts file. Accounts are more likely to be locked by Discord when used with the raid command.""")
     elif topic=="name":
         print('''\033[1;37mname:\033[0m
    Description: Generates a random name. Possible name types: "dsmp", "sus", "weird", "hypixel", "weird2", "random"
@@ -66,11 +66,6 @@ def PrintHelp(topic="all"):
    Description: Generates a random message. Possible message types: "cringe", "sus", "twitter", "funny", "good", "ip", "dsmp", "poop", "game", "ytbot", "random"
    \033[0;32mUsage\033[0m: "message {message type}"
    Example: "message cringe"''')
-    elif topic=="check-config":
-        print('''\033[1;37mcheck-config:\033[0m
-   Description: Checks most config files for mistakes
-   \033[0;32mUsage\033[0m: "check-config"
-   Example: "check-config"''')
     elif topic=="profile":
         print('''\033[1;37mprofile:\033[0m
    Description: Sets an accounts profile picture. Possible profile types: "generic", "minecraft", "sus"
