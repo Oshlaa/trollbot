@@ -1,5 +1,0 @@
-better-profanity==0.7.0
-discord.py-self[voice]==1.9.2
-openai==0.18.1
-PyYAML==6.0
-requests==2.27.1
