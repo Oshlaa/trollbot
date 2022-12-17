@@ -19,25 +19,16 @@ $ git clone https://github.com/Oshlaa/trollbot
 
 ## **2**
 
-Add execute permissions to the installation script and run it
-> Note: the installation script provided has only been tested for Ubuntu Linux (Pop!_OS)
+Run trollbot.py
+> Note: TrollBot only works for Windows/Linux based systems
 
 ```sh
-$ chmod +x tb
-$ ./tb install
+$ python3 trollbot.py
 ```
 ## **3**
 
-Configure and run TrollBot (Configuration files are located inside the 'trollbot' directory within the repository
+Start TrollBot via the start script
 
 ```sh
-$ ./tb start
+$ bash start.sh
 ```
-
-
-
-# TODO list:
-
-- Improve documentation
-- Get rid of bugs
-- Comment/clean up code
