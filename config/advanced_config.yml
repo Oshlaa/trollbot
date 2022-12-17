@@ -1,0 +1,56 @@
+#ADVANCED CONFIG
+#I do not suggest modifying these settings unless you know what you are doing!
+
+
+#STOP NO LONGER FUNCTIONAL (auto generated)
+openai-stop: " Human:"
+
+#OpenAI token limit
+token-limit: 2000
+
+#Input string length limit
+length-limit: 500
+
+
+#What to do with messages that are too long
+#Clip - Clip message
+#Ignore - Ignore message
+#Weird - Send a weird string of text (DOES NOT USE OPENAI)
+#Use "clip", "ignore", or "weird"
+lengthy-messages-action: ignore
+
+#Attempt to use messages the bot has previously sent instead of generating a new one (might save money) (DOES NOT WORK ANYMORE, am too lazy to re-implement)
+use-old-messages: False
+
+
+#Attempt to filter profanity from the AI
+filter-profanity: True
+
+#Mak da AI spel badley/hav bade grammer
+bad-spelling: False
+
+
+#Enable if you want to speak directly to the AI with no context
+#WARNING: Socially awkward
+no-prompt: False
+
+#Attempt to separate out the actual response
+#NOTE: Does not work well when no-prompt is set to True
+parse-output: True
+
+#Cache the config during runtime (CANNOT BE CHANGED DURING RUNTIME)
+#Enable if you don't change settings while Trollbot is running
+cache-config: True
+
+#Toggle debug logging (CANNOT BE CHANGED DURING RUNTIME)
+debug: False
+
+#Exclude certain modules from debug logging (CANNOT BE CHANGED DURING RUNTIME)
+debug-exclude:
+- none
+
+#List of modules that can be excluded:
+#- trollbot_core
+#- trollbot_config
+#- oshla_utils
+#- MAIN

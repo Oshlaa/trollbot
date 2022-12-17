@@ -1,0 +1,25 @@
+#Bot prefix (set to "none" to respond to all messages)
+bot-prefix: none
+
+#Chance the bot will respond to the message (set to 1 to respond to all messages)
+response-chance: 1
+
+#Wait for a random period of time before sending a message?
+send-wait: True
+
+#Prompt to give OpenAI
+openai-prompt: "Respond as a Discord user called {botname}. They are a flirty anime girl who uses emojis and abbreviations. This is direct message history:\n"
+start-message: "{botname}: Hewwo :heart:"
+
+#Placeholders:
+#{botname}
+#{sendername}
+
+
+#Make the bot join a voice channel under certain circumstances
+join-voice: False
+
+#Users to ignore
+ignored-users:
+#- Discord user ID here
+- "000000000000000000"
